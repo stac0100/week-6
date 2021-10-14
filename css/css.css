@@ -27,3 +27,17 @@ body {
     is the div with the class .sizing */
     font-size: 2em;
 }
+
+.using-viewport {
+    /* vw (viewport width) and vh (viewport height) respond to the size of the browser window */
+    background-color: blue;
+    width: 40vw;
+    height: 40vh;
+}
+
+.using-percent {
+    /* percent responds to the element's parent, in this case the element with the class .using-viewport */
+    background-color: azure;
+    width: 50%;
+    height: 1000px;
+}
