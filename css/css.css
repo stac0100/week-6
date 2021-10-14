@@ -60,6 +60,10 @@ html{
 
 body {
     background-color: red;
+    /* apply a background image*/
+    background-image: url("../images/white_brick_wall.png"); /* ../ leaves the folder so you can enter a different folder */
+    /* control how the background repeats*/
+    background-repeat: no-repeat;
 }
 
 /* use class to target an element with a . */
@@ -91,6 +95,14 @@ body {
     background-color: blue;
     width: 40vw;
     height: 40vh;
+
+    /* positioning a background 
+    background-image: url("../images/bread.jpg");
+    /* control the spot of a background image 
+    background-position: 40px 20px; /* set the horizontal, then vertical position of the image*/
+    
+    /* background shorthand replaces the individual background properties of the image background-repeat; no-repeat;*/
+    background: blue url("../images/bread.jpg") no-repeat right bottom;
 }
 
 .using-percent {
@@ -113,4 +125,27 @@ body {
     set text-decoration to none */
     /* if you have a list, use list-style to control the bullets */ 
     list-style: none; /* this removes the bullets from a list (but it's already in the CSS reset) */
+}
+
+/* apply CSS to multiple element by listing them with a comma */
+.image-contain, .image-cover {
+    border: black 3px solid;
+    width: 50vw;
+    height: 20vh;
+    background-image: url("../images/bread.jpg");
+    background-repeat: none;
+    background-position: center center;
+}
+
+/* background-size allows you to scale the background - either with a fixed value or cover or contain */
+
+.image-contain {
+    /* contain scales the background image so it's always inside the element */
+    background-size: contain;
+    
+}
+
+.image-cover {
+    /* cover scales the background image so it's always covering the element */
+    background-size: cover;
 }
