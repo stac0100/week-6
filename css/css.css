@@ -47,6 +47,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Start of main page code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 body {
     background-color: red;
 }
