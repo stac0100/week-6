@@ -3,3 +3,27 @@
 body {
     background-color: red;
 }
+
+/* use class to target an element with a . */
+.sizing {
+    /* border is shorthand that requires three properties: size, colour, and type*/
+    border: 5px purple solid;
+    /* width: 200px;
+    height: 200px;  
+    using px is a hard-coded value - the element will always be that size */
+    width: 50%;
+    height: 50%; /* percentages on heights don't work */
+    font-size: 10px;
+}
+
+.using-rem {
+    /* REM is based on the default font-size for the site (or the html tag)
+    Usually this is set to 16px by your browser.  */
+    font-size: 2rem;
+}
+
+.using-em {
+    /* EM is based on the font size of the element's parent - in this case, the parent of this span
+    is the div with the class .sizing */
+    font-size: 2em;
+}
